@@ -181,7 +181,7 @@ format_to_besthit <- function(x, prefix = NULL) {
   tax.merge <- tidyr::unite(tax,
     best_hit,
     c("col2", "col1"),
-    sep = ":",
+    sep = "_",
     remove = TRUE
   )
 
